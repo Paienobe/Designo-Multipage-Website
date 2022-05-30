@@ -1,4 +1,57 @@
 footer {
   background-color: black;
   color: white;
+  padding: 1rem;
+  padding-top: 8rem;
+}
+
+.footer_logo {
+  width: 80%;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.527);
+}
+
+.footer_links {
+  margin: 2rem auto;
+  width: 80%;
+  text-align: center;
+  font-size: large;
+}
+
+.footer_links p {
+  margin: 1rem 0;
+}
+
+.footer_links p:hover {
+  color: #e88069;
+}
+
+address {
+  color: rgba(255, 255, 255, 0.527);
+  font-style: normal;
+  margin: 2rem auto;
+  width: 80%;
+  text-align: center;
+}
+
+address > .title {
+  font-weight: bold;
+}
+
+.contact_information {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.527);
+  text-align: center;
+}
+
+.socials {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
