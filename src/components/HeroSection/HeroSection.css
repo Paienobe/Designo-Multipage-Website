@@ -26,7 +26,15 @@
   border-radius: 0.5rem;
   font-weight: 700;
   margin-bottom: 3rem;
+  cursor: pointer;
+  z-index: 100000;
 }
+
+/* .hero-btn:hover {
+  background-color: #e88069;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+} */
 
 .hero-image {
   display: block;

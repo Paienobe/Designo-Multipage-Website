@@ -2,11 +2,11 @@ footer {
   background-color: black;
   color: white;
   padding: 1rem;
-  padding-top: 8rem;
+  padding-top: 12rem;
 }
 
 .footer_logo {
-  width: 80%;
+  width: 65%;
   margin: 1.5rem auto;
   display: block;
 }
