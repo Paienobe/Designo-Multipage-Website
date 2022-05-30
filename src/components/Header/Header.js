@@ -1,14 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import siteLogo from '../../assets/shared/desktop/logo-dark.png'
 import menuButton from '../../assets/shared/mobile/icon-hamburger.svg'
+import closeButton from '../../assets/shared/mobile/icon-close.svg'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false)
+
   return (
     <header>
       <nav>
         <img src={siteLogo} alt='logo' className='site-logo' />
-        <img src={menuButton} alt='menu_btn' />
+        {!showMenu ? (
+          <img
+            src={menuButton}
+            alt='menu_btn'
+            onClick={() => {
+              setShowMenu(true)
+            }}
+          />
+        ) : (
+          <img
+            src={closeButton}
+            alt='menu_btn'
+            onClick={() => {
+              setShowMenu(false)
+            }}
+          />
+        )}
+        <div className='menu_list' style={!showMenu ? { top: '-18rem' } : {}}>
+          <Link to='/about' className='link'>
+            <p>OUR COMPANY</p>
+          </Link>
+
+          <p>LOCATIONS</p>
+          <p>CONTACT</p>
+        </div>
       </nav>
     </header>
   )

@@ -3,8 +3,26 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 1rem;
+  position: relative;
+  z-index: 12;
 }
 
 .site-logo {
   width: 60%;
+}
+
+.menu_list {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  position: absolute;
+  top: 5.74rem;
+  left: 0;
+  right: 0;
+  font-size: larger;
+}
+
+.menu_list p {
+  margin: 1rem 0;
+  text-decoration: none;
 }
