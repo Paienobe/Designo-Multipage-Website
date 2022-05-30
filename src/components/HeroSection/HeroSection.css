@@ -1,0 +1,37 @@
+.hero-section {
+  background-image: url('../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg');
+  background-color: #e88069;
+  color: white;
+  text-align: center;
+  max-height: 105vh;
+  overflow: hidden;
+  padding: 1rem;
+  padding-top: 3rem;
+  border-radius: 1rem;
+}
+
+.hero-heading {
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.hero-paragraph {
+  margin: 1rem 0;
+}
+
+.hero-btn {
+  background-color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
+  transform: scale(160%);
+}

@@ -1,0 +1,16 @@
+.illustration_container {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.illustration {
+  margin: 2rem auto;
+  background-image: url('../../assets/shared/desktop/bg-pattern-small-circle.svg');
+  background-repeat: no-repeat;
+  background-position: top, center;
+}
+
+.illustration_title {
+  letter-spacing: 0.35rem;
+  font-weight: 500;
+}
