@@ -37,15 +37,15 @@ const Header = () => {
         )}
         <div className='menu_list' style={!showMenu ? { top: '-18rem' } : {}}>
           <Link to='/about' onClick={closeMenu}>
-            <a>OUR COMPANY</a>
+            <span>OUR COMPANY</span>
           </Link>
 
           <Link to='/locations' onClick={closeMenu}>
-            <a>LOCATIONS</a>
+            <span>LOCATIONS</span>
           </Link>
 
           <Link to='/contact' onClick={closeMenu}>
-            <a>CONTACT</a>
+            <span>CONTACT</span>
           </Link>
         </div>
       </nav>

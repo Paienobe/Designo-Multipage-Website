@@ -35,7 +35,7 @@ const Footer = () => {
       <div className='socials'>
         {socialIcons.map((icon, index) => {
           return (
-            <a href='#'>
+            <a href='#' key={index}>
               <img src={icon} alt='social_icon' />
             </a>
           )
