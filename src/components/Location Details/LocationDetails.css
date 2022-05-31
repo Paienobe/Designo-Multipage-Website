@@ -1,0 +1,27 @@
+.location_text {
+  background-color: #e880694f;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.location_name {
+  color: #e88069;
+  margin: 1.5rem 0;
+}
+
+.office_name,
+.contact_text {
+  font-weight: bold;
+}
+
+.location_detail_section {
+  margin: 1rem 0;
+}
+
+.location_details {
+  margin-bottom: 2rem;
+}
+
+.locations {
+  margin-bottom: 12rem;
+}
