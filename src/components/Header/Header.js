@@ -7,11 +7,17 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
+  const closeMenu = () => {
+    setShowMenu(false)
+  }
 
   return (
     <header>
       <nav>
-        <img src={siteLogo} alt='logo' className='site-logo' />
+        <Link to='/'>
+          <img src={siteLogo} alt='logo' className='site-logo' />
+        </Link>
+
         {!showMenu ? (
           <img
             src={menuButton}
@@ -30,12 +36,17 @@ const Header = () => {
           />
         )}
         <div className='menu_list' style={!showMenu ? { top: '-18rem' } : {}}>
-          <Link to='/about' className='link'>
-            <p>OUR COMPANY</p>
+          <Link to='/about' onClick={closeMenu}>
+            <a>OUR COMPANY</a>
           </Link>
 
-          <p>LOCATIONS</p>
-          <p>CONTACT</p>
+          <Link to='/locations' onClick={closeMenu}>
+            <a>LOCATIONS</a>
+          </Link>
+
+          <Link to='/contact' onClick={closeMenu}>
+            <a>CONTACT</a>
+          </Link>
         </div>
       </nav>
     </header>

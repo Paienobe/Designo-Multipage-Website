@@ -1,0 +1,36 @@
+.about-page img {
+  display: block;
+}
+
+.about_intro {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.about_intro_text,
+.talent_text {
+  background-color: #e88069;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  background-image: url('../../assets/about/mobile/bg-pattern-hero-about-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top, center;
+}
+
+.about_intro_text h1 {
+  margin-bottom: 1.5rem;
+}
+
+.talent_text {
+  background-color: #e880694f;
+  color: black;
+}
+
+.talent_text h1 {
+  color: #e88069;
+}
+
+.talent_text p {
+  margin: 2rem 0;
+}
