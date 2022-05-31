@@ -1,0 +1,27 @@
+.works_container {
+  margin: 4rem 0;
+}
+
+.project_item {
+  width: 90%;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.project_item img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.project_text {
+  background-color: #e880694f;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.project_text h2 {
+  color: #e88069;
+  margin-bottom: 1rem;
+}
