@@ -16,13 +16,14 @@ nav {
   color: white;
   padding: 1rem;
   position: absolute;
-  top: 5.74rem;
+  top: 5.65rem;
   left: 0;
   right: 0;
   font-size: larger;
 }
 
-.menu_list p {
+.menu_list a {
   margin: 1rem 0;
   text-decoration: none;
+  display: block;
 }

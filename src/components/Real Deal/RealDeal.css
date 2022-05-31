@@ -1,0 +1,22 @@
+.real-deal {
+  margin-bottom: 14rem;
+}
+
+.real_deal_text {
+  background-color: #e880694f;
+  color: black;
+  padding: 0, 1rem;
+  padding: 3rem 1rem;
+  text-align: center;
+  background-image: url('../../assets/about/mobile/bg-pattern-hero-about-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top, center;
+}
+
+.real_deal_text h1 {
+  color: #e88069;
+}
+
+.real_deal_text p {
+  margin: 2rem 0;
+}
