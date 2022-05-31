@@ -1,0 +1,57 @@
+.form_holder {
+  background-color: #e88069;
+  color: white;
+  padding: 4rem 1rem 0.5rem 1rem;
+  background-image: url('../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.form_holder_text {
+  text-align: center;
+}
+
+.form_holder_text p {
+  margin-top: 2rem;
+}
+
+.contact_form {
+  margin-top: 4rem;
+}
+
+.contact_form input,
+textarea {
+  width: 100%;
+  padding: 0.65rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 1rem;
+}
+
+.contact_form input:focus,
+textarea:focus {
+  border: 1px solid white;
+  outline: none;
+}
+
+.contact_form input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form_submit {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 35%;
+  border: none;
+  display: block;
+  margin-left: auto;
+}
+
+.form_submit:hover {
+  background-color: #e88069;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
