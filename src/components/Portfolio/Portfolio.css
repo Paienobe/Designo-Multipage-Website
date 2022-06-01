@@ -45,3 +45,10 @@
 .category_overlay:hover {
   background-color: #e880698c;
 }
+
+@media (min-width: 640px) {
+  .portfolio-section {
+    width: 50%;
+    margin: auto;
+  }
+}

@@ -18,7 +18,7 @@ const LocationIllustration = () => {
           <div key={index} className='location_item'>
             <img src={location.image} alt='location_illustration' />
             <h2>{location.name.toUpperCase()}</h2>
-            <Link to='/location'>
+            <Link to='/locations'>
               <button className='view_location_btn'>SEE LOCATION</button>
             </Link>
           </div>

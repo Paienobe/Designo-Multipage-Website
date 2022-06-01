@@ -2,11 +2,14 @@ import React from 'react'
 import './AboutIntro.css'
 import firstImage from '../../assets/about/mobile/image-about-hero.jpg'
 import secondImage from '../../assets/about/mobile/image-world-class-talent.jpg'
+// tablet images
+import tabImage1 from '../../assets/about/tablet/image-about-hero.jpg'
+import tabImage2 from '../../assets/about/tablet/image-world-class-talent.jpg'
 
 const AboutIntro = () => {
   return (
     <div className='about_intro'>
-      <img src={firstImage} alt='hero' />
+      <img src={window.innerWidth < 640 ? firstImage : tabImage1} alt='hero' />
       <div className='about_intro_text'>
         <h1>About Us</h1>
         <p>
@@ -17,7 +20,10 @@ const AboutIntro = () => {
           digital experiences that connect with our clients' audiences.
         </p>
       </div>
-      <img src={secondImage} alt='secondary-image' />
+      <img
+        src={window.innerWidth < 640 ? secondImage : tabImage2}
+        alt='secondary-image'
+      />
       <div className='talent_text'>
         <h1>World-class talent</h1>
         <p>

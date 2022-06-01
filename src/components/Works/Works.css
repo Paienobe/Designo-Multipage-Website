@@ -25,3 +25,9 @@
   color: #e88069;
   margin-bottom: 1rem;
 }
+
+@media (min-width: 640px) {
+  .project_item {
+    width: 50%;
+  }
+}

@@ -20,3 +20,9 @@
 .real_deal_text p {
   margin: 2rem 0;
 }
+
+@media (min-width: 640px) {
+  .real_deal_text {
+    padding: 3rem 25vw;
+  }
+}

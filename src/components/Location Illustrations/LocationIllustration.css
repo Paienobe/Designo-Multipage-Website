@@ -26,3 +26,9 @@
   color: white;
   font-weight: bold;
 }
+
+.view_location_btn:hover {
+  background-color: white;
+  color: #e88069;
+  border: 1px solid #e88069;
+}
