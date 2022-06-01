@@ -5,7 +5,7 @@ import heroImage from '../../assets/home/desktop/image-hero-phone.png'
 const HeroSection = () => {
   return (
     <div className='hero-section'>
-      <div>
+      <div className='hero_text'>
         <h1 className='hero-heading'>
           Award-winning custom designs and digital branding solutions
         </h1>

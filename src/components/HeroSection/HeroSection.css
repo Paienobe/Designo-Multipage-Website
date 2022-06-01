@@ -25,16 +25,22 @@
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   cursor: pointer;
-  z-index: 100000;
 }
 
-/* .hero-btn:hover {
+.hero-btn:hover {
   background-color: #e88069;
   color: white;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
-} */
+}
+
+.image-container {
+  overflow-y: hidden;
+  padding-top: 5rem;
+  outline: none;
+  border: none;
+}
 
 .hero-image {
   display: block;
@@ -42,4 +48,24 @@
   margin: auto;
   object-fit: cover;
   transform: scale(160%);
+  object-fit: cover;
+}
+
+@media (min-width: 640px) {
+  .hero-section {
+    background-image: url('../../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg');
+    max-height: 75vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero_text,
+  .image-container {
+    width: 50%;
+    margin: auto;
+  }
+
+  .image-container {
+    overflow-x: hidden;
+  }
 }

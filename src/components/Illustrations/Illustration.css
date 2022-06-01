@@ -16,3 +16,11 @@
   font-weight: 500;
   margin: 1rem 0;
 }
+
+@media (min-width: 640px) {
+  .illustration_container {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 14rem;
+  }
+}

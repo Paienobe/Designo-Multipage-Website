@@ -39,3 +39,11 @@
   color: white;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
 }
+
+@media (min-width: 640px) {
+  .contact_card {
+    width: 50%;
+    margin: auto;
+    bottom: -24rem;
+  }
+}

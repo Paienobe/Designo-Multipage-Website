@@ -34,3 +34,15 @@
 .talent_text p {
   margin: 2rem 0;
 }
+
+@media (min-width: 640px) {
+  .about_intro_text,
+  .talent_text {
+    padding: 5rem 25vw;
+  }
+
+  .about-page img {
+    display: block;
+    width: 100%;
+  }
+}

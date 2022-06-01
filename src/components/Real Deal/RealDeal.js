@@ -1,11 +1,16 @@
 import React from 'react'
 import './RealDeal.css'
 import realDealImage from '../../assets/about/mobile/image-real-deal.jpg'
+// tablet image
+import tabImage from '../../assets/about/tablet/image-real-deal.jpg'
 
 const RealDeal = () => {
   return (
     <div className='real-deal'>
-      <img src={realDealImage} alt='real-deal' />
+      <img
+        src={window.innerWidth < 640 ? realDealImage : tabImage}
+        alt='real-deal'
+      />
       <div className='real_deal_text'>
         <h1>The real deal</h1>
         <p>

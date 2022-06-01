@@ -15,3 +15,9 @@
 .portfolio_intro h1 {
   margin: 1rem 0;
 }
+
+@media (min-width: 640px) {
+  .portfolio_intro {
+    padding: 5rem 25vw;
+  }
+}

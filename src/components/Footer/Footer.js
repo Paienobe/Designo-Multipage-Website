@@ -6,18 +6,28 @@ import youtube from '../../assets/shared/desktop/icon-youtube.svg'
 import twitter from '../../assets/shared/desktop/icon-twitter.svg'
 import pinterest from '../../assets/shared/desktop/icon-pinterest.svg'
 import instagram from '../../assets/shared/desktop/icon-instagram.svg'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const socialIcons = [facebook, youtube, twitter, pinterest, instagram]
   return (
     <footer>
-      <img src={footerLogo} alt='logo' className='footer_logo' />
+      <Link to='/'>
+        <img src={footerLogo} alt='logo' className='footer_logo' />
+      </Link>
+
       <hr />
 
       <div className='footer_links'>
-        <p>OUR COMPANY</p>
-        <p>LOCATIONS</p>
-        <p>CONTACT</p>
+        <Link to='/about'>
+          <p>OUR COMPANY</p>
+        </Link>
+        <Link to='/locations'>
+          <p>LOCATIONS</p>
+        </Link>
+        <Link to='/contact'>
+          <p>CONTACT</p>
+        </Link>
       </div>
 
       <address>
