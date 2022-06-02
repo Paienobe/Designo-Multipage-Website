@@ -18,22 +18,26 @@ const Header = () => {
           <img src={siteLogo} alt='logo' className='site-logo' />
         </Link>
 
-        {!showMenu ? (
-          <img
-            src={menuButton}
-            alt='menu_btn'
-            onClick={() => {
-              setShowMenu(true)
-            }}
-          />
-        ) : (
-          <img
-            src={closeButton}
-            alt='menu_btn'
-            onClick={() => {
-              setShowMenu(false)
-            }}
-          />
+        {window.innerWidth < 850 && (
+          <div>
+            {!showMenu ? (
+              <img
+                src={menuButton}
+                alt='menu_btn'
+                onClick={() => {
+                  setShowMenu(true)
+                }}
+              />
+            ) : (
+              <img
+                src={closeButton}
+                alt='menu_btn'
+                onClick={() => {
+                  setShowMenu(false)
+                }}
+              />
+            )}
+          </div>
         )}
         <div className='menu_list' style={!showMenu ? { top: '-18rem' } : {}}>
           <Link to='/about' onClick={closeMenu}>

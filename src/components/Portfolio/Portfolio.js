@@ -1,8 +1,6 @@
 import React from 'react'
 import './Portfolio.css'
 import { categories } from '../../data/categories'
-import arrowIcon from '../../assets/shared/desktop/icon-right-arrow.svg'
-import { Link } from 'react-router-dom'
 import PortfolioBox from '../PortfolioBox/PortfolioBox'
 
 const Portfolio = ({ projectType }) => {
@@ -18,7 +16,7 @@ const Portfolio = ({ projectType }) => {
           })}
         </div>
       ) : (
-        <div>
+        <div className='dynamic'>
           {alternateOptions.map((category, index) => {
             return <PortfolioBox category={category} key={index} />
           })}

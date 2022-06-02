@@ -21,3 +21,12 @@
     padding: 5rem 25vw;
   }
 }
+
+@media (min-width: 850px) {
+  .portfolio_intro {
+    width: 90%;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 5rem 30%;
+  }
+}

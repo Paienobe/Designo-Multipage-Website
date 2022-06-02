@@ -40,17 +40,26 @@ const LocationDetails = () => {
     },
   ]
   return (
-    <div>
+    <div className='location_container'>
       {locations.map((location, index) => {
         return (
-          <div className='location_details' key={index}>
+          <div
+            className='location_details'
+            key={index}
+            style={
+              index === 1
+                ? { flexDirection: 'row-reverse' }
+                : { flexDirection: 'row' }
+            }
+          >
             <div className='location_text'>
-              <h1 className='location_name'>{location.name}</h1>
-
-              <div className='location_detail_section'>
-                <p className='office_name'>{location.officeName}</p>
-                <p>{location.street}</p>
-                <p>{location.officeLocation}</p>
+              <div>
+                <h1 className='location_name'>{location.name}</h1>
+                <div className='location_detail_section'>
+                  <p className='office_name'>{location.officeName}</p>
+                  <p>{location.street}</p>
+                  <p>{location.officeLocation}</p>
+                </div>
               </div>
 
               <div className='location_detail_section'>
@@ -59,7 +68,7 @@ const LocationDetails = () => {
                 <p>M: {location.mail}</p>
               </div>
             </div>
-            <div>
+            <div className='map_container'>
               <img src={location.map} alt='map' className='location_map' />
             </div>
           </div>

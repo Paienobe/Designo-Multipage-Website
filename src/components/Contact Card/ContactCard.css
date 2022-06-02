@@ -47,3 +47,18 @@
     bottom: -24rem;
   }
 }
+
+@media (min-width: 850px) {
+  .contact_card {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: -20rem;
+    padding: 4rem 4rem;
+  }
+
+  .contact_card div {
+    width: 40%;
+    text-align: left;
+  }
+}

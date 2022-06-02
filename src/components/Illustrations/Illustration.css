@@ -24,3 +24,16 @@
     margin-bottom: 14rem;
   }
 }
+
+@media (min-width: 850px) {
+  .illustration_container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .illustration {
+    width: 30%;
+  }
+}

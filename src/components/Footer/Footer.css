@@ -68,3 +68,60 @@ address > .title {
     padding-bottom: 2rem;
   }
 }
+
+@media (min-width: 850px) {
+  .footer_logo {
+    width: 60%;
+    margin: 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .footer_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    margin: 0;
+  }
+
+  footer {
+    padding: 22vh 5vw;
+    padding-bottom: 2rem;
+  }
+
+  .logo_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .sub_footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+
+  .address_details_container {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  address,
+  .contact_information {
+    text-align: left;
+  }
+
+  .socials {
+    width: 25%;
+    margin: 0;
+  }
+}

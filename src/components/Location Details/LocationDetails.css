@@ -28,4 +28,41 @@
 
 .location_map {
   width: 100%;
+  display: block;
+}
+
+@media (min-width: 850px) {
+  .location_container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .location_details {
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .location_text {
+    width: 59%;
+    padding: 4rem 4rem;
+    padding-right: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    border-radius: 1rem;
+  }
+
+  .map_container {
+    width: 39%;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  /* .location_container {
+    height: 20vh;
+  } */
 }

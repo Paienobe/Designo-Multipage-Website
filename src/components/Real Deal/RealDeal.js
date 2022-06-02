@@ -3,14 +3,25 @@ import './RealDeal.css'
 import realDealImage from '../../assets/about/mobile/image-real-deal.jpg'
 // tablet image
 import tabImage from '../../assets/about/tablet/image-real-deal.jpg'
+// desktop image
+import desktopImage from '../../assets/about/desktop/image-real-deal.jpg'
 
 const RealDeal = () => {
   return (
     <div className='real-deal'>
-      <img
-        src={window.innerWidth < 640 ? realDealImage : tabImage}
-        alt='real-deal'
-      />
+      <div className='real_image_container'>
+        <img
+          src={
+            window.innerWidth < 640
+              ? realDealImage
+              : window.innerWidth > 640 && window.innerWidth < 850
+              ? tabImage
+              : desktopImage
+          }
+          alt='real-deal'
+        />
+      </div>
+
       <div className='real_deal_text'>
         <h1>The real deal</h1>
         <p>
