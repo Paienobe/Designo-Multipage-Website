@@ -69,3 +69,29 @@
     overflow-x: hidden;
   }
 }
+
+@media (min-width: 850px) {
+  .hero-section {
+    display: flex;
+    align-items: center;
+    max-height: 80vh;
+    padding: 5rem 5rem;
+    padding-bottom: 0;
+    width: 90%;
+    margin: auto;
+  }
+
+  .hero_text {
+    text-align: left;
+    width: 70%;
+  }
+
+  .hero-image {
+    transform: scale(150%);
+  }
+
+  .image-container {
+    padding-top: 0;
+    overflow: visible;
+  }
+}

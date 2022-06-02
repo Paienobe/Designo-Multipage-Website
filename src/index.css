@@ -32,3 +32,8 @@ h6 {
 .alternative_portfolios {
   margin-bottom: 12rem;
 }
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}

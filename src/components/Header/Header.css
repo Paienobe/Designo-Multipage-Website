@@ -27,3 +27,30 @@ nav {
   text-decoration: none;
   display: block;
 }
+
+.menu_list a:hover {
+  color: #e88069;
+}
+
+@media (min-width: 850px) {
+  nav {
+    padding: 2rem 5%;
+  }
+
+  .menu_list {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    position: static;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0;
+  }
+
+  .menu_list a {
+    margin: 0;
+  }
+}

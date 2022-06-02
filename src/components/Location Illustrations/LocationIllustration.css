@@ -32,3 +32,12 @@
   color: #e88069;
   border: 1px solid #e88069;
 }
+
+@media (min-width: 850px) {
+  .location_illustrations_container {
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+}

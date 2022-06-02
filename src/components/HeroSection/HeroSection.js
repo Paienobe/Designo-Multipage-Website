@@ -1,6 +1,7 @@
 import React from 'react'
 import './HeroSection.css'
 import heroImage from '../../assets/home/desktop/image-hero-phone.png'
+import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
   return (
@@ -14,7 +15,9 @@ const HeroSection = () => {
           fully responsive websites, app design, and engaging brand experiences.
           Find out more about our services.
         </p>
-        <button className='hero-btn'>LEARN MORE</button>
+        <Link to='/contact'>
+          <button className='hero-btn'>LEARN MORE</button>
+        </Link>
       </div>
 
       <div className='image-container'>
